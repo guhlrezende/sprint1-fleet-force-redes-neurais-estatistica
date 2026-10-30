@@ -11,14 +11,13 @@ enunciados/            texto das 9 disciplinas da Sprint 1, como aparece no Port
 redes-neurais/         entrega de Redes Neurais
   enunciado.md
   Portal8_Redes_Neurais_Pipeline_FleetForce.pdf
-  pipeline.png
-statistical/           entrega de Statistical Computing
+statistical/           entrega de Statistical Computing (em R)
   enunciado.md
-  base_prf_acidentes_2025.csv
-  eda_prf_acidentes_2025.py
-  Relatorio_Insights_Acidentes_PRF_2025.pdf
-  saidas/              tabelas, medidas e gráficos gerados pelo script
-requirements.txt
+  base_pedagios_sp_2025.csv
+  preparar_base_artesp.r
+  analise_pedagios_sp_2025.r
+  Relatorio_Insights_Pedagios_SP_2025.pdf
+  saidas/              tabelas de frequência, medidas e gráficos gerados pelo script
 ```
 
 ## Redes Neurais: pipeline para classificar a condução
@@ -28,25 +27,29 @@ PDF de 9 páginas, sem treinar nada, como o enunciado permite.
 - **Problema:** classificar janelas de 5 segundos de acelerômetro e GPS (kit ESP32) em condução normal, frenagem brusca ou arrancada brusca. O indicador de eventos bruscos por 100 km completa o diagnóstico de custo da calculadora.
 - **Redes comparadas:** Perceptron, MLP e LSTM. A MLP é a escolhida, porque a entrada é tabular e foi a rede vista em aula.
 - **Dados:** o arquivo de eventos do kit é simulado (um único caminhão, 132 linhas). O PDF explica como foi gerado, os problemas que ele tem e por que não treinamos agora.
-- **Honestidade:** o que ainda não foi medido está marcado como `[Suposição]` no texto.
+- **Honestidade:** o que ainda não foi medido está marcado como `Suposição` no texto.
 
-## Statistical Computing: acidentes nas rodovias federais em 2025
+## Statistical Computing: pedágio nas rodovias de São Paulo em 2025
 
-- **Base:** dados abertos da Polícia Rodoviária Federal (PRF), acidentes de 2025 agrupados por ocorrência, 72.528 registros. Fonte: <https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf>. A base aqui é um recorte do arquivo original, com as variáveis usadas e uma linha removida por falta de classificação do acidente.
-- **Variáveis:** 2 nominais (`tipo_acidente`, `condicao_metereologica`), 2 ordinais (`classificacao_acidente`, `fase_dia`), 2 discretas (`pessoas`, `veiculos`) e 2 contínuas (`km`, `hora_decimal`).
-- **Tabelas de frequência:** `veiculos` (discreta) e `km` (contínua, 17 classes pela regra de Sturges). O script também calcula as medidas descritivas, os quartis, decis e percentis, e gera os gráficos.
-- **Relatório:** insights para a decisão de uma frota, com os limites da análise. As associações são descritivas e não provam causa. A base mede a gravidade dos acidentes, não o custo em reais.
+- **Base:** dados abertos da ARTESP, "Tráfego nas praças de pedágio por dia em 2025", licença Creative Commons Atribuição. Fonte: <https://dadosabertos.artesp.sp.gov.br/dataset/volume-de-trafego>. São 927.516 registros originais, somados para **117.548 linhas, uma por dia, praça e sentido**, em 209 praças e 23 lotes de concessão. Cobre só as rodovias estaduais concedidas de São Paulo.
+- **Por que essa base:** pedágio é custo de frota e é o produto da Sem Parar. A base traz a forma de pagamento (TAG, Vale-Pedágio, dinheiro, cartão) e a categoria do veículo por eixos.
+- **Variáveis:** 2 nominais (`lote`, `sentido`), 2 ordinais (`trimestre`, `faixa_volume`), 2 discretas (`volume_total`, `veiculos_pesados`) e 2 contínuas (`pct_tag`, `eixos_medios`). As ordinais são derivadas (da data e dos quartis do volume), e o relatório diz isso.
+- **Tabelas de frequência:** `veiculos_pesados` (discreta) e `pct_tag` (contínua), em 18 classes pela regra de Sturges. O script também calcula tendência central, dispersão e separatrizes das quatro variáveis quantitativas.
+- **Relatório:** insights para a decisão de uma frota (TAG em 74,0% das passagens, 91,9% entre os veículos pesados, e pesados caindo de 24,9% nos dias úteis para 13,5% no fim de semana), com os limites da análise.
 
 ### Como rodar
 
-Python 3.10 ou mais novo.
+Só R base, sem pacotes extras. Testado no R 4.6.1.
 
 ```bash
-pip install -r requirements.txt
-python statistical/eda_prf_acidentes_2025.py statistical/base_prf_acidentes_2025.csv saida
+# 1. gerar a base a partir dos CSVs da ARTESP (opcional: a base já está aqui)
+Rscript statistical/preparar_base_artesp.r <pasta_com_os_csv_da_artesp> base_pedagios_sp_2025.csv
+
+# 2. rodar a análise
+Rscript statistical/analise_pedagios_sp_2025.r statistical/base_pedagios_sp_2025.csv saida
 ```
 
-O script também aceita o arquivo original da PRF (`datatran2025.csv`). Ele grava as tabelas, as medidas, os gráficos e o `resultados.json` na pasta `saida`.
+A análise grava na pasta `saida` as tabelas de frequência, as medidas descritivas, o `insights.txt` e dois histogramas.
 
 ## Observações
 

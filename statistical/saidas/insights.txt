@@ -1,74 +1,61 @@
-Acidentes analisados: 72528
+Registros (dia x praca x sentido): 117548
+Pracas: 209 | Lotes: 23
+Periodo: 2025-01-01 a 2025-12-31
+Veiculos no ano: 1.177.866.844
 
-% de acidentes fatais por fase do dia
-             total  fatais  % fatais
-fase_dia                            
-Amanhecer     3447     386     11.20
-Pleno dia    40374    2048      5.07
-Anoitecer     3926     253      6.44
-Plena Noite  24781    2522     10.18
+TAG: % das passagens (global): 74,03
+Vale-Pedagio: % das passagens (global): 0,095
+Pesados: % dos veiculos (global): 22,09
+TAG entre os pesados (%): 91,86
+TAG entre os nao pesados (%): 68,98
+Eixos medios por veiculo (ponderado pelo volume): 2,479
+Correlacao de Pearson, pct_pesados x eixos_medios: 0,900
 
-% fatais por tipo de pista
-            total  fatais  % fatais
-tipo_pista                         
-Dupla       30782    1501      4.88
-Múltipla     7014     285      4.06
-Simples     34732    3423      9.86
+== % TAG por lote (ponderado), do maior ao menor ==
+                   lote    veiculos pct_tag pct_pesados
+            L01-AUTOBAN 188.537.326   80.90       23.57
+          L06-INTERVIAS  41.067.453   77.75       29.04
+  L31-NOROESTE PAULISTA  34.576.424   77.22       30.99
+    L34-RAPOSO CASTELLO  75.842.149   76.50       14.00
+               L07-ROTA  63.060.631   76.02       26.78
+              L25-SPMAR  63.435.866   75.95       26.51
+             L20-SPVIAS  36.452.440   75.67       32.62
+        L29-VIAPAULISTA  44.434.604   74.94       28.27
+           L11-RENOVIAS  41.115.587   74.09       19.67
+           L12-VIAOESTE  32.752.843   73.99       15.21
+     L23-LESTE PAULISTA  82.278.125   73.03       12.99
+           L24-RODOANEL  93.739.646   72.31       19.84
+          L28-ENTREVIAS  38.180.219   72.00       26.72
+               L30-EIXO  71.874.189   71.62       25.33
+               L16-CART  30.673.736   71.56       33.38
+      L21-ROD. DO TIETÊ  31.441.645   70.86       24.17
+            L13-COLINAS  55.021.228   70.23       18.55
+          L19-VIARONDON  25.832.755   69.66       26.78
+ L22-ECOVIAS IMIGRANTES  45.402.816   69.55       17.87
+               L03-TEBE   1.091.762   65.40       27.71
+            L27-TAMOIOS  20.050.612   64.84        6.78
+    L33-ROTA SOROCABANA  53.636.190   62.93       15.05
+       L32-NOVO LITORAL   7.368.598   59.86        9.84
 
-% fatais por tipo de acidente
-                                total  fatais  % fatais
-tipo_acidente                                          
-Atropelamento de Pedestre        3057     902     29.51
-Colisão frontal                  4738    1395     29.44
-Colisão lateral sentido oposto   2152     212      9.85
-Eventos atípicos                  287      23      8.01
-Atropelamento de Animal          1133      68      6.00
-Saída de leito carroçável       10209     605      5.93
-Colisão com objeto               5109     297      5.81
-Capotamento                      1373      63      4.59
-Colisão transversal              9306     427      4.59
-Colisão traseira                14360     619      4.31
-Tombamento                       6351     268      4.22
-Derramamento de carga             107       3      2.80
-Colisão lateral mesmo sentido    7885     212      2.69
-Queda de ocupante de veículo     3450      87      2.52
-Engavetamento                    1233      28      2.27
-Incêndio                         1771       0      0.00
-Sinistro pessoal de trânsito        7       0      0.00
+== 10 pracas com maior volume no ano ==
+             praca                lote volume_total
+   ITAQUAQUECETUBA  L23-LESTE PAULISTA   37.503.859
+           BARUERI L34-RAPOSO CASTELLO   33.830.522
+            OSASCO L34-RAPOSO CASTELLO   28.865.211
+       CAMPO LIMPO         L01-AUTOBAN   26.196.171
+           CAIERAS         L01-AUTOBAN   25.870.080
+ REGIS BITTENCOURT        L24-RODOANEL   20.285.764
+         GUARAREMA  L23-LESTE PAULISTA   18.939.552
+        JAGUARIÚNA        L11-RENOVIAS   18.173.678
+           ATIBAIA            L07-ROTA   17.910.121
+        INDAIATUBA         L13-COLINAS   17.758.849
 
-% fatais por condição meteorológica
-                        total  fatais  % fatais
-condicao_metereologica                         
-Chuva                    6438     402      6.24
-Céu Claro               46374    3418      7.37
-Garoa/Chuvisco           2422     144      5.95
-Ignorado                 1000      99      9.90
-Neve                        1       0      0.00
-Nevoeiro/Neblina          553      60     10.85
-Nublado                 11435     830      7.26
-Sol                      4201     247      5.88
-Vento                     104       9      8.65
+== por trimestre ==
+ trimestre media_dia pct_tag pct_pesados
+        T1      9744   73.53       21.81
+        T2      9690   74.58       22.78
+        T3     10059   75.22       23.22
+        T4     10543   72.95       20.73
 
-Top 5 causas
-causa_acidente
-Ausência de reação do condutor                               11469
-Reação tardia ou ineficiente do condutor                     10799
-Acessar a via sem observar a presença dos outros veículos     7097
-Condutor deixou de manter distância do veículo da frente      4413
-Velocidade Incompatível                                       4088
-
-Cenário 1: dias úteis x fim de semana
-                   dias úteis (seg a sex)  fim de semana
-acidentes                        49504.00       23024.00
-acidentes por dia                  189.70         221.40
-% fatais                             6.54           8.56
-pessoas (média)                      2.59           2.61
-
-Cenário 2: as 5 UFs com mais acidentes
-    acidentes  km_mediana  pessoas_media  mortos  % fatais
-uf                                                        
-MG       9570       485.0           2.69     765      6.76
-PR       7630       177.0           2.66     593      6.70
-RJ       6428       180.0           2.45     330      4.76
-RS       4899       231.2           2.65     327      5.61
-SC       8186       138.0           2.49     434      4.57
+Media de veiculos por praca-sentido-dia: dias uteis 10.529 | fim de semana 8.742
+% pesados (ponderado): dias uteis 24,93 | fim de semana 13,47
