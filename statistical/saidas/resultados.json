@@ -1,0 +1,941 @@
+{
+  "n": 72528,
+  "periodo": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "sturges_km": {
+    "classes": 17,
+    "amplitude_classe": 74
+  },
+  "freq_classificacao_acidente (ordinal)": [
+    {
+      "classificacao_acidente": "Sem Vítimas",
+      "fi": 11138,
+      "fr": 0.153568277079197,
+      "fr_%": 15.36,
+      "Fi": 11138,
+      "Fr_%": 15.36
+    },
+    {
+      "classificacao_acidente": "Com Vítimas Feridas",
+      "fi": 56181,
+      "fr": 0.7746111846459298,
+      "fr_%": 77.46,
+      "Fi": 67319,
+      "Fr_%": 92.82
+    },
+    {
+      "classificacao_acidente": "Com Vítimas Fatais",
+      "fi": 5209,
+      "fr": 0.07182053827487316,
+      "fr_%": 7.18,
+      "Fi": 72528,
+      "Fr_%": 100.0
+    }
+  ],
+  "freq_fase_dia (ordinal)": [
+    {
+      "fase_dia": "Amanhecer",
+      "fi": 3447,
+      "fr": 0.0475264725347452,
+      "fr_%": 4.75,
+      "Fi": 3447,
+      "Fr_%": 4.75
+    },
+    {
+      "fase_dia": "Pleno dia",
+      "fi": 40374,
+      "fr": 0.5566677696889477,
+      "fr_%": 55.67,
+      "Fi": 43821,
+      "Fr_%": 60.42
+    },
+    {
+      "fase_dia": "Anoitecer",
+      "fi": 3926,
+      "fr": 0.05413081844253254,
+      "fr_%": 5.41,
+      "Fi": 47747,
+      "Fr_%": 65.83
+    },
+    {
+      "fase_dia": "Plena Noite",
+      "fi": 24781,
+      "fr": 0.3416749393337745,
+      "fr_%": 34.17,
+      "Fi": 72528,
+      "Fr_%": 100.0
+    }
+  ],
+  "freq_condicao_metereologica (nominal)": [
+    {
+      "condicao_metereologica": "Céu Claro",
+      "fi": 46374,
+      "fr": 0.6393944407677035,
+      "fr_%": 63.94,
+      "Fi": 46374,
+      "Fr_%": 63.94
+    },
+    {
+      "condicao_metereologica": "Nublado",
+      "fi": 11435,
+      "fr": 0.1576632472975954,
+      "fr_%": 15.77,
+      "Fi": 57809,
+      "Fr_%": 79.71
+    },
+    {
+      "condicao_metereologica": "Chuva",
+      "fi": 6438,
+      "fr": 0.08876571806750497,
+      "fr_%": 8.88,
+      "Fi": 64247,
+      "Fr_%": 88.58
+    },
+    {
+      "condicao_metereologica": "Sol",
+      "fi": 4201,
+      "fr": 0.05792245753364218,
+      "fr_%": 5.79,
+      "Fi": 68448,
+      "Fr_%": 94.37
+    },
+    {
+      "condicao_metereologica": "Garoa/Chuvisco",
+      "fi": 2422,
+      "fr": 0.03339399955879109,
+      "fr_%": 3.34,
+      "Fi": 70870,
+      "Fr_%": 97.71
+    },
+    {
+      "condicao_metereologica": "Ignorado",
+      "fi": 1000,
+      "fr": 0.013787778513125966,
+      "fr_%": 1.38,
+      "Fi": 71870,
+      "Fr_%": 99.09
+    },
+    {
+      "condicao_metereologica": "Nevoeiro/Neblina",
+      "fi": 553,
+      "fr": 0.007624641517758659,
+      "fr_%": 0.76,
+      "Fi": 72423,
+      "Fr_%": 99.86
+    },
+    {
+      "condicao_metereologica": "Vento",
+      "fi": 104,
+      "fr": 0.0014339289653651005,
+      "fr_%": 0.14,
+      "Fi": 72527,
+      "Fr_%": 100.0
+    },
+    {
+      "condicao_metereologica": "Neve",
+      "fi": 1,
+      "fr": 1.3787778513125965e-05,
+      "fr_%": 0.0,
+      "Fi": 72528,
+      "Fr_%": 100.0
+    }
+  ],
+  "freq_tipo_acidente (nominal)": [
+    {
+      "tipo_acidente": "Colisão traseira",
+      "fi": 14360,
+      "fr": 0.19799249944848885,
+      "fr_%": 19.8,
+      "Fi": 14360,
+      "Fr_%": 19.8
+    },
+    {
+      "tipo_acidente": "Saída de leito carroçável",
+      "fi": 10209,
+      "fr": 0.140759430840503,
+      "fr_%": 14.08,
+      "Fi": 24569,
+      "Fr_%": 33.88
+    },
+    {
+      "tipo_acidente": "Colisão transversal",
+      "fi": 9306,
+      "fr": 0.12830906684315024,
+      "fr_%": 12.83,
+      "Fi": 33875,
+      "Fr_%": 46.71
+    },
+    {
+      "tipo_acidente": "Colisão lateral mesmo sentido",
+      "fi": 7885,
+      "fr": 0.10871663357599823,
+      "fr_%": 10.87,
+      "Fi": 41760,
+      "Fr_%": 57.58
+    },
+    {
+      "tipo_acidente": "Tombamento",
+      "fi": 6351,
+      "fr": 0.087566181336863,
+      "fr_%": 8.76,
+      "Fi": 48111,
+      "Fr_%": 66.33
+    },
+    {
+      "tipo_acidente": "Colisão com objeto",
+      "fi": 5109,
+      "fr": 0.07044176042356055,
+      "fr_%": 7.04,
+      "Fi": 53220,
+      "Fr_%": 73.38
+    },
+    {
+      "tipo_acidente": "Colisão frontal",
+      "fi": 4738,
+      "fr": 0.06532649459519083,
+      "fr_%": 6.53,
+      "Fi": 57958,
+      "Fr_%": 79.91
+    },
+    {
+      "tipo_acidente": "Queda de ocupante de veículo",
+      "fi": 3450,
+      "fr": 0.047567835870284576,
+      "fr_%": 4.76,
+      "Fi": 61408,
+      "Fr_%": 84.67
+    },
+    {
+      "tipo_acidente": "Atropelamento de Pedestre",
+      "fi": 3057,
+      "fr": 0.042149238914626075,
+      "fr_%": 4.21,
+      "Fi": 64465,
+      "Fr_%": 88.88
+    },
+    {
+      "tipo_acidente": "Colisão lateral sentido oposto",
+      "fi": 2152,
+      "fr": 0.029671299360247077,
+      "fr_%": 2.97,
+      "Fi": 66617,
+      "Fr_%": 91.85
+    },
+    {
+      "tipo_acidente": "Incêndio",
+      "fi": 1771,
+      "fr": 0.024418155746746086,
+      "fr_%": 2.44,
+      "Fi": 68388,
+      "Fr_%": 94.29
+    },
+    {
+      "tipo_acidente": "Capotamento",
+      "fi": 1373,
+      "fr": 0.01893061989852195,
+      "fr_%": 1.89,
+      "Fi": 69761,
+      "Fr_%": 96.18
+    },
+    {
+      "tipo_acidente": "Engavetamento",
+      "fi": 1233,
+      "fr": 0.017000330906684315,
+      "fr_%": 1.7,
+      "Fi": 70994,
+      "Fr_%": 97.88
+    },
+    {
+      "tipo_acidente": "Atropelamento de Animal",
+      "fi": 1133,
+      "fr": 0.01562155305537172,
+      "fr_%": 1.56,
+      "Fi": 72127,
+      "Fr_%": 99.45
+    },
+    {
+      "tipo_acidente": "Eventos atípicos",
+      "fi": 287,
+      "fr": 0.003957092433267152,
+      "fr_%": 0.4,
+      "Fi": 72414,
+      "Fr_%": 99.84
+    },
+    {
+      "tipo_acidente": "Derramamento de carga",
+      "fi": 107,
+      "fr": 0.0014752923009044782,
+      "fr_%": 0.15,
+      "Fi": 72521,
+      "Fr_%": 99.99
+    },
+    {
+      "tipo_acidente": "Sinistro pessoal de trânsito",
+      "fi": 7,
+      "fr": 9.651444959188175e-05,
+      "fr_%": 0.01,
+      "Fi": 72528,
+      "Fr_%": 100.0
+    }
+  ],
+  "freq_veiculos (discreta)": [
+    {
+      "veiculos": "1",
+      "fi": 23617,
+      "fr": 0.32562596514449593,
+      "fr_%": 32.56,
+      "Fi": 23617,
+      "Fr_%": 32.56
+    },
+    {
+      "veiculos": "2",
+      "fi": 35070,
+      "fr": 0.4835373924553276,
+      "fr_%": 48.35,
+      "Fi": 58687,
+      "Fr_%": 80.92
+    },
+    {
+      "veiculos": "3",
+      "fi": 8623,
+      "fr": 0.11889201411868519,
+      "fr_%": 11.89,
+      "Fi": 67310,
+      "Fr_%": 92.81
+    },
+    {
+      "veiculos": "4",
+      "fi": 3002,
+      "fr": 0.041390911096404144,
+      "fr_%": 4.14,
+      "Fi": 70312,
+      "Fr_%": 96.94
+    },
+    {
+      "veiculos": "5 ou mais",
+      "fi": 2216,
+      "fr": 0.030553717185087138,
+      "fr_%": 3.06,
+      "Fi": 72528,
+      "Fr_%": 100.0
+    }
+  ],
+  "freq_pessoas (discreta)": [
+    {
+      "pessoas": "1",
+      "fi": 15454,
+      "fr": 0.21307632914184865,
+      "fr_%": 21.31,
+      "Fi": 15454,
+      "Fr_%": 21.31
+    },
+    {
+      "pessoas": "2",
+      "fi": 29300,
+      "fr": 0.40398191043459075,
+      "fr_%": 40.4,
+      "Fi": 44754,
+      "Fr_%": 61.71
+    },
+    {
+      "pessoas": "3",
+      "fi": 15033,
+      "fr": 0.20727167438782262,
+      "fr_%": 20.73,
+      "Fi": 59787,
+      "Fr_%": 82.43
+    },
+    {
+      "pessoas": "4",
+      "fi": 6382,
+      "fr": 0.08799360247076991,
+      "fr_%": 8.8,
+      "Fi": 66169,
+      "Fr_%": 91.23
+    },
+    {
+      "pessoas": "5 ou mais",
+      "fi": 6359,
+      "fr": 0.08767648356496802,
+      "fr_%": 8.77,
+      "Fi": 72528,
+      "Fr_%": 100.0
+    }
+  ],
+  "freq_km (contínua, classes de Sturges)": [
+    {
+      "km": "0 |-- 74",
+      "ponto_medio": 37.0,
+      "fi": 17766,
+      "fr": 0.2449536730641959,
+      "fr_%": 24.5,
+      "Fi": 17766,
+      "Fr_%": 24.5
+    },
+    {
+      "km": "74 |-- 148",
+      "ponto_medio": 111.0,
+      "fi": 12959,
+      "fr": 0.17867582175159938,
+      "fr_%": 17.87,
+      "Fi": 30725,
+      "Fr_%": 42.36
+    },
+    {
+      "km": "148 |-- 222",
+      "ponto_medio": 185.0,
+      "fi": 9240,
+      "fr": 0.12739907346128393,
+      "fr_%": 12.74,
+      "Fi": 39965,
+      "Fr_%": 55.1
+    },
+    {
+      "km": "222 |-- 296",
+      "ponto_medio": 259.0,
+      "fi": 6595,
+      "fr": 0.09093039929406574,
+      "fr_%": 9.09,
+      "Fi": 46560,
+      "Fr_%": 64.2
+    },
+    {
+      "km": "296 |-- 370",
+      "ponto_medio": 333.0,
+      "fi": 5600,
+      "fr": 0.0772115596735054,
+      "fr_%": 7.72,
+      "Fi": 52160,
+      "Fr_%": 71.92
+    },
+    {
+      "km": "370 |-- 444",
+      "ponto_medio": 407.0,
+      "fi": 4479,
+      "fr": 0.0617554599602912,
+      "fr_%": 6.18,
+      "Fi": 56639,
+      "Fr_%": 78.09
+    },
+    {
+      "km": "444 |-- 518",
+      "ponto_medio": 481.0,
+      "fi": 4930,
+      "fr": 0.067973748069711,
+      "fr_%": 6.8,
+      "Fi": 61569,
+      "Fr_%": 84.89
+    },
+    {
+      "km": "518 |-- 592",
+      "ponto_medio": 555.0,
+      "fi": 3406,
+      "fr": 0.046961173615707036,
+      "fr_%": 4.7,
+      "Fi": 64975,
+      "Fr_%": 89.59
+    },
+    {
+      "km": "592 |-- 666",
+      "ponto_medio": 629.0,
+      "fi": 2693,
+      "fr": 0.037130487535848224,
+      "fr_%": 3.71,
+      "Fi": 67668,
+      "Fr_%": 93.3
+    },
+    {
+      "km": "666 |-- 740",
+      "ponto_medio": 703.0,
+      "fi": 1912,
+      "fr": 0.026362232517096844,
+      "fr_%": 2.64,
+      "Fi": 69580,
+      "Fr_%": 95.94
+    },
+    {
+      "km": "740 |-- 814",
+      "ponto_medio": 777.0,
+      "fi": 1215,
+      "fr": 0.01675215089344805,
+      "fr_%": 1.68,
+      "Fi": 70795,
+      "Fr_%": 97.61
+    },
+    {
+      "km": "814 |-- 888",
+      "ponto_medio": 851.0,
+      "fi": 834,
+      "fr": 0.011499007279947055,
+      "fr_%": 1.15,
+      "Fi": 71629,
+      "Fr_%": 98.76
+    },
+    {
+      "km": "888 |-- 962",
+      "ponto_medio": 925.0,
+      "fi": 572,
+      "fr": 0.007886609309508052,
+      "fr_%": 0.79,
+      "Fi": 72201,
+      "Fr_%": 99.55
+    },
+    {
+      "km": "962 |-- 1036",
+      "ponto_medio": 999.0,
+      "fi": 153,
+      "fr": 0.0021095301125082727,
+      "fr_%": 0.21,
+      "Fi": 72354,
+      "Fr_%": 99.76
+    },
+    {
+      "km": "1036 |-- 1110",
+      "ponto_medio": 1073.0,
+      "fi": 116,
+      "fr": 0.0015993823075226119,
+      "fr_%": 0.16,
+      "Fi": 72470,
+      "Fr_%": 99.92
+    },
+    {
+      "km": "1110 |-- 1184",
+      "ponto_medio": 1147.0,
+      "fi": 49,
+      "fr": 0.0006756011471431723,
+      "fr_%": 0.07,
+      "Fi": 72519,
+      "Fr_%": 99.99
+    },
+    {
+      "km": "1184 |-- 1258",
+      "ponto_medio": 1221.0,
+      "fi": 9,
+      "fr": 0.00012409000661813368,
+      "fr_%": 0.01,
+      "Fi": 72528,
+      "Fr_%": 100.0
+    }
+  ],
+  "medidas": {
+    "km": {
+      "média aritmética": 260.0385,
+      "mediana": 192.5,
+      "moda": 2.0,
+      "média geométrica (valores > 0)": 142.6691,
+      "média harmônica (valores > 0)": 24.6713,
+      "mínimo": 0.0,
+      "máximo": 1257.0,
+      "amplitude total": 1257.0,
+      "variância (amostral)": 51947.5854,
+      "desvio padrão (amostral)": 227.9201,
+      "erro padrão da média": 0.8463,
+      "coeficiente de variação (%)": 87.6486,
+      "desvio médio absoluto": 187.0511,
+      "amplitude interquartílica (Q3 - Q1)": 335.0,
+      "assimetria": 0.986,
+      "curtose (excesso)": 0.3096,
+      "Q1 (25%)": 76.0,
+      "Q2 (50%)": 192.5,
+      "Q3 (75%)": 411.0,
+      "D1 (10%)": 19.0,
+      "D2 (20%)": 57.0,
+      "D3 (30%)": 96.0,
+      "D4 (40%)": 138.0,
+      "D5 (50%)": 192.5,
+      "D6 (60%)": 263.2,
+      "D7 (70%)": 346.0,
+      "D8 (80%)": 473.0,
+      "D9 (90%)": 598.0,
+      "P1": 1.0,
+      "P5": 6.5,
+      "P95": 712.0,
+      "P99": 908.1
+    },
+    "hora_decimal": {
+      "média aritmética": 13.2955,
+      "mediana": 14.0,
+      "moda": 19.0,
+      "média geométrica (valores > 0)": 11.1024,
+      "média harmônica (valores > 0)": 4.9803,
+      "mínimo": 0.0,
+      "máximo": 23.98,
+      "amplitude total": 23.98,
+      "variância (amostral)": 36.313,
+      "desvio padrão (amostral)": 6.026,
+      "erro padrão da média": 0.0224,
+      "coeficiente de variação (%)": 45.3238,
+      "desvio médio absoluto": 5.1747,
+      "amplitude interquartílica (Q3 - Q1)": 10.08,
+      "assimetria": -0.2713,
+      "curtose (excesso)": -0.9213,
+      "Q1 (25%)": 8.25,
+      "Q2 (50%)": 14.0,
+      "Q3 (75%)": 18.33,
+      "D1 (10%)": 5.08,
+      "D2 (20%)": 7.5,
+      "D3 (30%)": 9.33,
+      "D4 (40%)": 11.67,
+      "D5 (50%)": 14.0,
+      "D6 (60%)": 16.0,
+      "D7 (70%)": 17.67,
+      "D8 (80%)": 19.0,
+      "D9 (90%)": 20.83,
+      "P1": 0.33,
+      "P5": 2.5735,
+      "P95": 22.17,
+      "P99": 23.5
+    },
+    "pessoas": {
+      "média aritmética": 2.5968,
+      "mediana": 2.0,
+      "moda": 2.0,
+      "média geométrica (valores > 0)": 2.2027,
+      "média harmônica (valores > 0)": 1.9195,
+      "mínimo": 1.0,
+      "máximo": 76.0,
+      "amplitude total": 75.0,
+      "variância (amostral)": 5.0856,
+      "desvio padrão (amostral)": 2.2551,
+      "erro padrão da média": 0.0084,
+      "coeficiente de variação (%)": 86.8426,
+      "desvio médio absoluto": 1.1627,
+      "amplitude interquartílica (Q3 - Q1)": 1.0,
+      "assimetria": 11.7911,
+      "curtose (excesso)": 244.5524,
+      "Q1 (25%)": 2.0,
+      "Q2 (50%)": 2.0,
+      "Q3 (75%)": 3.0,
+      "D1 (10%)": 1.0,
+      "D2 (20%)": 1.0,
+      "D3 (30%)": 2.0,
+      "D4 (40%)": 2.0,
+      "D5 (50%)": 2.0,
+      "D6 (60%)": 2.0,
+      "D7 (70%)": 3.0,
+      "D8 (80%)": 3.0,
+      "D9 (90%)": 4.0,
+      "P1": 1.0,
+      "P5": 1.0,
+      "P95": 5.0,
+      "P99": 8.0
+    },
+    "veiculos": {
+      "média aritmética": 1.9981,
+      "mediana": 2.0,
+      "moda": 2.0,
+      "média geométrica (valores > 0)": 1.7804,
+      "média harmônica (valores > 0)": 1.6057,
+      "mínimo": 1.0,
+      "máximo": 82.0,
+      "amplitude total": 81.0,
+      "variância (amostral)": 1.268,
+      "desvio padrão (amostral)": 1.1261,
+      "erro padrão da média": 0.0042,
+      "coeficiente de variação (%)": 56.3576,
+      "desvio médio absoluto": 0.65,
+      "amplitude interquartílica (Q3 - Q1)": 1.0,
+      "assimetria": 7.543,
+      "curtose (excesso)": 370.3299,
+      "Q1 (25%)": 1.0,
+      "Q2 (50%)": 2.0,
+      "Q3 (75%)": 2.0,
+      "D1 (10%)": 1.0,
+      "D2 (20%)": 1.0,
+      "D3 (30%)": 1.0,
+      "D4 (40%)": 2.0,
+      "D5 (50%)": 2.0,
+      "D6 (60%)": 2.0,
+      "D7 (70%)": 2.0,
+      "D8 (80%)": 2.0,
+      "D9 (90%)": 3.0,
+      "P1": 1.0,
+      "P5": 1.0,
+      "P95": 4.0,
+      "P99": 6.0
+    }
+  },
+  "insights": {
+    "fatal_por_fase_dia": [
+      {
+        "fase_dia": "Amanhecer",
+        "total": 3447,
+        "fatais": 386,
+        "% fatais": 11.2
+      },
+      {
+        "fase_dia": "Pleno dia",
+        "total": 40374,
+        "fatais": 2048,
+        "% fatais": 5.07
+      },
+      {
+        "fase_dia": "Anoitecer",
+        "total": 3926,
+        "fatais": 253,
+        "% fatais": 6.44
+      },
+      {
+        "fase_dia": "Plena Noite",
+        "total": 24781,
+        "fatais": 2522,
+        "% fatais": 10.18
+      }
+    ],
+    "fatal_por_tipo_pista": [
+      {
+        "tipo_pista": "Dupla",
+        "total": 30782,
+        "fatais": 1501,
+        "% fatais": 4.88
+      },
+      {
+        "tipo_pista": "Múltipla",
+        "total": 7014,
+        "fatais": 285,
+        "% fatais": 4.06
+      },
+      {
+        "tipo_pista": "Simples",
+        "total": 34732,
+        "fatais": 3423,
+        "% fatais": 9.86
+      }
+    ],
+    "fatal_por_tipo_acidente": [
+      {
+        "tipo_acidente": "Atropelamento de Pedestre",
+        "total": 3057,
+        "fatais": 902,
+        "% fatais": 29.51
+      },
+      {
+        "tipo_acidente": "Colisão frontal",
+        "total": 4738,
+        "fatais": 1395,
+        "% fatais": 29.44
+      },
+      {
+        "tipo_acidente": "Colisão lateral sentido oposto",
+        "total": 2152,
+        "fatais": 212,
+        "% fatais": 9.85
+      },
+      {
+        "tipo_acidente": "Eventos atípicos",
+        "total": 287,
+        "fatais": 23,
+        "% fatais": 8.01
+      },
+      {
+        "tipo_acidente": "Atropelamento de Animal",
+        "total": 1133,
+        "fatais": 68,
+        "% fatais": 6.0
+      },
+      {
+        "tipo_acidente": "Saída de leito carroçável",
+        "total": 10209,
+        "fatais": 605,
+        "% fatais": 5.93
+      },
+      {
+        "tipo_acidente": "Colisão com objeto",
+        "total": 5109,
+        "fatais": 297,
+        "% fatais": 5.81
+      },
+      {
+        "tipo_acidente": "Capotamento",
+        "total": 1373,
+        "fatais": 63,
+        "% fatais": 4.59
+      },
+      {
+        "tipo_acidente": "Colisão transversal",
+        "total": 9306,
+        "fatais": 427,
+        "% fatais": 4.59
+      },
+      {
+        "tipo_acidente": "Colisão traseira",
+        "total": 14360,
+        "fatais": 619,
+        "% fatais": 4.31
+      },
+      {
+        "tipo_acidente": "Tombamento",
+        "total": 6351,
+        "fatais": 268,
+        "% fatais": 4.22
+      },
+      {
+        "tipo_acidente": "Derramamento de carga",
+        "total": 107,
+        "fatais": 3,
+        "% fatais": 2.8
+      },
+      {
+        "tipo_acidente": "Colisão lateral mesmo sentido",
+        "total": 7885,
+        "fatais": 212,
+        "% fatais": 2.69
+      },
+      {
+        "tipo_acidente": "Queda de ocupante de veículo",
+        "total": 3450,
+        "fatais": 87,
+        "% fatais": 2.52
+      },
+      {
+        "tipo_acidente": "Engavetamento",
+        "total": 1233,
+        "fatais": 28,
+        "% fatais": 2.27
+      },
+      {
+        "tipo_acidente": "Incêndio",
+        "total": 1771,
+        "fatais": 0,
+        "% fatais": 0.0
+      },
+      {
+        "tipo_acidente": "Sinistro pessoal de trânsito",
+        "total": 7,
+        "fatais": 0,
+        "% fatais": 0.0
+      }
+    ],
+    "fatal_por_condicao": [
+      {
+        "condicao_metereologica": "Chuva",
+        "total": 6438,
+        "fatais": 402,
+        "% fatais": 6.24
+      },
+      {
+        "condicao_metereologica": "Céu Claro",
+        "total": 46374,
+        "fatais": 3418,
+        "% fatais": 7.37
+      },
+      {
+        "condicao_metereologica": "Garoa/Chuvisco",
+        "total": 2422,
+        "fatais": 144,
+        "% fatais": 5.95
+      },
+      {
+        "condicao_metereologica": "Ignorado",
+        "total": 1000,
+        "fatais": 99,
+        "% fatais": 9.9
+      },
+      {
+        "condicao_metereologica": "Neve",
+        "total": 1,
+        "fatais": 0,
+        "% fatais": 0.0
+      },
+      {
+        "condicao_metereologica": "Nevoeiro/Neblina",
+        "total": 553,
+        "fatais": 60,
+        "% fatais": 10.85
+      },
+      {
+        "condicao_metereologica": "Nublado",
+        "total": 11435,
+        "fatais": 830,
+        "% fatais": 7.26
+      },
+      {
+        "condicao_metereologica": "Sol",
+        "total": 4201,
+        "fatais": 247,
+        "% fatais": 5.88
+      },
+      {
+        "condicao_metereologica": "Vento",
+        "total": 104,
+        "fatais": 9,
+        "% fatais": 8.65
+      }
+    ],
+    "top_causas": {
+      "Ausência de reação do condutor": 11469,
+      "Reação tardia ou ineficiente do condutor": 10799,
+      "Acessar a via sem observar a presença dos outros veículos": 7097,
+      "Condutor deixou de manter distância do veículo da frente": 4413,
+      "Velocidade Incompatível": 4088
+    },
+    "top_uf": {
+      "MG": 9570,
+      "SC": 8186,
+      "PR": 7630,
+      "RJ": 6428,
+      "RS": 4899
+    },
+    "cenario_dias": {
+      "dias úteis (seg a sex)": {
+        "acidentes": 49504.0,
+        "acidentes por dia": 189.7,
+        "% fatais": 6.54,
+        "pessoas (média)": 2.59
+      },
+      "fim de semana": {
+        "acidentes": 23024.0,
+        "acidentes por dia": 221.4,
+        "% fatais": 8.56,
+        "pessoas (média)": 2.61
+      }
+    },
+    "cenario_uf": [
+      {
+        "uf": "MG",
+        "acidentes": 9570,
+        "km_mediana": 485.0,
+        "pessoas_media": 2.69,
+        "mortos": 765,
+        "% fatais": 6.76
+      },
+      {
+        "uf": "PR",
+        "acidentes": 7630,
+        "km_mediana": 177.0,
+        "pessoas_media": 2.66,
+        "mortos": 593,
+        "% fatais": 6.7
+      },
+      {
+        "uf": "RJ",
+        "acidentes": 6428,
+        "km_mediana": 180.0,
+        "pessoas_media": 2.45,
+        "mortos": 330,
+        "% fatais": 4.76
+      },
+      {
+        "uf": "RS",
+        "acidentes": 4899,
+        "km_mediana": 231.2,
+        "pessoas_media": 2.65,
+        "mortos": 327,
+        "% fatais": 5.61
+      },
+      {
+        "uf": "SC",
+        "acidentes": 8186,
+        "km_mediana": 138.0,
+        "pessoas_media": 2.49,
+        "mortos": 434,
+        "% fatais": 4.57
+      }
+    ],
+    "total_mortos": 6042,
+    "total_feridos": 83549,
+    "total_pessoas": 188340
+  }
+}
