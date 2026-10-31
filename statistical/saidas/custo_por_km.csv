@@ -1,0 +1,5 @@
+"grupo","n","mediana_rs_km","media_rs_km","q1","q3"
+"Gasolina (G e F)",625,0.559,0.613,0.492,0.69
+"Etanol (flex)",305,0.457,0.471,0.428,0.495
+"Gasolina nos mesmos flex",305,0.507,0.521,0.474,0.555
+"Diesel S10 (D)",144,0.728,0.721,0.691,0.755

@@ -1,61 +1,8 @@
-Registros (dia x praca x sentido): 117548
-Pracas: 209 | Lotes: 23
-Periodo: 2025-01-01 a 2025-12-31
-Veiculos no ano: 1.177.866.844
-
-TAG: % das passagens (global): 74,03
-Vale-Pedagio: % das passagens (global): 0,095
-Pesados: % dos veiculos (global): 22,09
-TAG entre os pesados (%): 91,86
-TAG entre os nao pesados (%): 68,98
-Eixos medios por veiculo (ponderado pelo volume): 2,479
-Correlacao de Pearson, pct_pesados x eixos_medios: 0,900
-
-== % TAG por lote (ponderado), do maior ao menor ==
-                   lote    veiculos pct_tag pct_pesados
-            L01-AUTOBAN 188.537.326   80.90       23.57
-          L06-INTERVIAS  41.067.453   77.75       29.04
-  L31-NOROESTE PAULISTA  34.576.424   77.22       30.99
-    L34-RAPOSO CASTELLO  75.842.149   76.50       14.00
-               L07-ROTA  63.060.631   76.02       26.78
-              L25-SPMAR  63.435.866   75.95       26.51
-             L20-SPVIAS  36.452.440   75.67       32.62
-        L29-VIAPAULISTA  44.434.604   74.94       28.27
-           L11-RENOVIAS  41.115.587   74.09       19.67
-           L12-VIAOESTE  32.752.843   73.99       15.21
-     L23-LESTE PAULISTA  82.278.125   73.03       12.99
-           L24-RODOANEL  93.739.646   72.31       19.84
-          L28-ENTREVIAS  38.180.219   72.00       26.72
-               L30-EIXO  71.874.189   71.62       25.33
-               L16-CART  30.673.736   71.56       33.38
-      L21-ROD. DO TIETÊ  31.441.645   70.86       24.17
-            L13-COLINAS  55.021.228   70.23       18.55
-          L19-VIARONDON  25.832.755   69.66       26.78
- L22-ECOVIAS IMIGRANTES  45.402.816   69.55       17.87
-               L03-TEBE   1.091.762   65.40       27.71
-            L27-TAMOIOS  20.050.612   64.84        6.78
-    L33-ROTA SOROCABANA  53.636.190   62.93       15.05
-       L32-NOVO LITORAL   7.368.598   59.86        9.84
-
-== 10 pracas com maior volume no ano ==
-             praca                lote volume_total
-   ITAQUAQUECETUBA  L23-LESTE PAULISTA   37.503.859
-           BARUERI L34-RAPOSO CASTELLO   33.830.522
-            OSASCO L34-RAPOSO CASTELLO   28.865.211
-       CAMPO LIMPO         L01-AUTOBAN   26.196.171
-           CAIERAS         L01-AUTOBAN   25.870.080
- REGIS BITTENCOURT        L24-RODOANEL   20.285.764
-         GUARAREMA  L23-LESTE PAULISTA   18.939.552
-        JAGUARIÚNA        L11-RENOVIAS   18.173.678
-           ATIBAIA            L07-ROTA   17.910.121
-        INDAIATUBA         L13-COLINAS   17.758.849
-
-== por trimestre ==
- trimestre media_dia pct_tag pct_pesados
-        T1      9744   73.53       21.81
-        T2      9690   74.58       22.78
-        T3     10059   75.22       23.22
-        T4     10543   72.95       20.73
-
-Media de veiculos por praca-sentido-dia: dias uteis 10.529 | fim de semana 8.742
-% pesados (ponderado): dias uteis 24,93 | fim de semana 13,47
+Base real do Inmetro: 966 modelos/versoes validos de 42 marcas; 769 tem km/l informado (faltam eletricos, modelos E100 e poucas versoes sem esse dado na tabela).
+Consumo combinado mediano de 11.1 km/l (coluna gasolina ou diesel da tabela); metade dos modelos fica entre 9.4 e 12.9 km/l.
+Hibridos rodam em mediana 11.8 km/l contra 11.2 km/l dos modelos a combustao.
+Com a gasolina comum a R$ 6.49/l (media Brasil, ANP, semana de 18 a 24/10/2026), o custo de combustivel por km e de R$ 0.579 no modelo a combustao mediano e R$ 0.550 no hibrido mediano.
+Nos 305 modelos flex com km/l nos dois combustiveis, o etanol (R$ 4.11/l na ANP) sai mais barato por km em 100.0% deles: o etanol rende em mediana 70% do km/l da gasolina e o preco dele esta em 63.3% do da gasolina.
+37.7% dos modelos estao nas faixas A e B da ENCE absoluta e 29.8% nas faixas D e E: a etiqueta serve de filtro rapido na compra de frota.
+O CO2 fossil mediano e de 106 g/km; a dispersao e alta (CV de 54%), entao escolher o modelo muda bastante a emissao da frota.
+Limite: os valores sao de ensaio padronizado de laboratorio e cobrem so veiculos leves; o consumo real da frota depende de carga, rota e condutor.
