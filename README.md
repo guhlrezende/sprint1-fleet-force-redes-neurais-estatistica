@@ -25,12 +25,11 @@ statistical/           entrega de Statistical Computing (em R)
 
 ## Redes Neurais: pipeline para classificar a condução
 
-PDF de 14 páginas, sem treinar nada, como o enunciado permite.
+PDF de 13 páginas, sem treinar nada, como o enunciado permite.
 
 - **Problema:** classificar janelas de 5 segundos de aceleração, velocidade e rotação em condução normal, frenagem brusca ou arrancada brusca. O indicador de eventos bruscos por 100 km completa o diagnóstico de custo da calculadora. O problema vale para as três personas do material do Challenge: gestor de frota, CFO/liderança e Sem Parar Empresas.
 - **Redes comparadas:** autoencoder, MLP e LSTM. A MLP é o classificador escolhido, porque a entrada é tabular e foi a rede vista em aula. O autoencoder entra como complemento para eventos raros.
-- **Dados:** a fonte principal proposta é a telemetria da mobway, de carros conectados de fábrica. O kit ESP32 do Challenge e o projeto de sensores da equipe são alternativas. O arquivo de eventos do kit é simulado (um único caminhão, 132 linhas), e o PDF explica como ele foi gerado, os problemas que tem e por que não treinamos agora.
-- **Ligação com os outros trabalhos da equipe:** sensores, API, banco de dados, calculadora em Python e o relatório de Statistical aparecem como proposta para a Sprint 2.
+- **Dados:** a fonte principal proposta é a telemetria da mobway, de carros conectados de fábrica. O kit ESP32 do Challenge é a alternativa. O arquivo de eventos do kit é simulado (um único caminhão, 132 linhas), e o PDF explica como ele foi gerado, os problemas que tem e por que não treinamos agora.
 - **Honestidade:** o que ainda não foi medido está marcado como `Suposição` no texto, com uma tabela de suposições a validar.
 
 ## Statistical Computing: consumo e emissões dos veículos leves (Inmetro, 2026)
@@ -40,7 +39,7 @@ PDF de 14 páginas, sem treinar nada, como o enunciado permite.
 - **Preços dos combustíveis:** ANP, Levantamento de Preços de Combustíveis, média Brasil na semana de 18 a 24/10/2026 (gasolina comum R$ 6,49, etanol R$ 4,11, diesel S10 R$ 7,32). O script lê os preços de `anp_precos_2026-10-18_a_24.csv` e aceita trocar a referência por um estado na variável `uf_referencia`.
 - **Variáveis:** 2 nominais (`marca`, `propulsao`), 2 ordinais (`ence_absoluta`, `ence_relativa`), 2 discretas (`n_velocidades`, `n_valvulas`) e 2 contínuas (`km_l_combinado`, `co2_fossil_gkm`), todas com mais de 100 observações válidas.
 - **Tabelas de frequência:** `n_velocidades` (discreta) e `km_l_combinado` (contínua, 11 classes pela regra de Sturges). O script também calcula medidas descritivas, custo por km por combustível e a comparação etanol x gasolina nos modelos flex, inclusive por estado.
-- **Relatório:** insights para a decisão de uma frota, com os limites da análise (valores de laboratório, só veículos leves) e uma seção que liga o trabalho aos outros da equipe.
+- **Relatório:** insights para a decisão de uma frota, com os limites da análise (valores de laboratório, só veículos leves).
 
 ### Como rodar
 
